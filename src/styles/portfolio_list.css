@@ -1,0 +1,20 @@
+.modal_open {
+	overflow: hidden;
+}
+
+.portfolio_container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	max-width: 1170px;
+	width: 78%;
+	margin: 0 auto;
+}
+
+@media(max-width: 900px){
+	.portfolio_container {
+		width: auto;
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+}

@@ -1,0 +1,165 @@
+.intro_container {
+	width: 78%;
+	max-width: 1170px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 auto 72px auto;
+}
+
+@media(max-width: 900px){
+	.intro_container {
+		width: auto;
+		padding: 0 18px;
+		margin-bottom: 36px;
+	}
+}
+
+.intro {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-right: 9px;
+	box-sizing: border-box;
+}
+
+@media(max-width: 800px){
+	.intro {
+		flex: 100%;
+		max-width: 100%;
+		padding-right: 0;
+	}
+}
+
+.intro_img_container {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-left: 9px;
+	box-sizing: border-box;
+}
+
+@media(max-width: 800px){
+	.intro_img_container {
+		flex: 100%;
+		max-width: 100%;
+		padding-left: 0;
+	}
+}
+
+.intro_img_container img {
+	width: 400px;
+	max-width: 100%;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+.work_sample_container {
+	width: 78%;
+	max-width: 1170px;
+	margin: 0 auto;
+	margin-bottom: 72px;
+}
+
+@media(max-width: 900px){
+	.work_sample_container {
+		width: auto;
+		padding: 0 18px;
+		margin-bottom: 36px;
+	}
+}
+
+.work_sample_row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 36px;
+}
+
+.work_sample {
+	flex: 0 0 33.33333%;
+	max-width: 33.33333%;
+	box-sizing: border-box;
+}
+
+.work_sample_row .work_sample:nth-child(1) {
+	padding-right: 12px;
+}
+
+.work_sample_row .work_sample:nth-child(2) {
+	padding-left: 6px;
+	padding-right: 6px;
+}
+
+.work_sample_row .work_sample:nth-child(3) {
+	padding-left: 12px;
+}
+
+@media(max-width: 800px){
+	.work_sample {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.work_sample img {
+	max-width: 100%;
+}
+
+.link_to_portfolio,
+.link_to_portfolio:visited {
+	padding: 12px 24px;
+	box-sizing: border-box;
+	display: inline-block;
+	background: blue;
+	color: #fff;
+}
+
+@media(max-width: 800px){
+	.link_to_portfolio {
+		display: block;
+		text-align: center;
+	}
+}
+
+.about_seattle {
+	position: relative;
+	background-size: cover;
+	background-position: center 40%;
+	padding: 72px 0;
+	z-index: 1;
+}
+
+.about_seattle::before {
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.45;
+	z-index: -1;
+}
+
+.about_contact {
+	width: 50%;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.about_contact p {
+	color: #fff;
+	text-shadow: 2px 2px 0 #333;
+}
+
+.link_to_contact,
+.link_to_contact:visited {
+	padding: 12px 24px;
+	box-sizing: border-box;
+	display: inline-block;
+	background: blue;
+	color: #fff;	
+}

@@ -1,0 +1,174 @@
+.main_nav_container {
+    position: relative;
+}
+
+.main_nav {
+
+}
+@media(max-width: 900px){
+    .main_nav.nav_open {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 900;
+        display: none;
+    }
+}
+
+@media(max-width: 900px){
+    .main_nav.nav_open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.desktop_menu {
+    display: block;
+    margin: 0;
+    padding-left: 0;
+}
+
+@media(max-width: 900px){
+    .desktop_menu {
+        display: none;
+    }
+}
+
+.mobile_menu {
+    display: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.mobile_menu li {
+    margin-bottom: 24px;
+}
+
+.mobile_menu li:last-child {
+    margin-bottom: 0;
+}
+
+@media(max-width: 900px){
+    .mobile_menu {
+        position: absolute;
+        pointer-events: none;
+        opacity: 0;
+        display: block;
+    }
+
+    .main_nav.nav_open .mobile_menu {
+        position: relative;
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 200;
+    }
+
+    .main_nav.nav_open .mobile_menu li {
+        display: block;
+        font-size: 2em;
+        margin-left: 0;
+    }
+}
+
+.desktop_menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.desktop_menu li:first-child {
+    margin-left: 0;
+}
+
+.main_nav a {
+
+}
+
+.nav_toggle_container {
+    position: relative;
+    display: flex;
+}
+
+.nav_toggle {
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    padding: 18px 15px;
+    border: none;
+    background: orange;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 902;
+    display: none;
+}
+
+@media(max-width: 900px){
+    .nav_toggle {
+        display: block;
+    }
+}
+
+.nav_toggle:focus {
+	outline: transparent;
+}
+
+.nav_burger {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+}
+
+.nav_burger .line {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+}
+
+.nav_burger .line:nth-child(1){
+	top: 0;
+}
+
+.nav_burger .line:nth-child(2){
+	top: 10.5px;
+}
+
+.nav_burger .line:nth-child(3){
+	top: 21px;
+}
+
+.radial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 100;
+    background: orange;
+    display: none;
+}
+
+@media(max-width: 900px){
+    .radial {
+        display: block;
+    }
+}
+
+@media(max-width: 900px) {
+    .nav_open {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

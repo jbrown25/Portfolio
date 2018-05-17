@@ -1,0 +1,18 @@
+main {
+	position: relative;
+}
+
+.sections-exit {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	opacity: 1;
+	transition: all 0.15s ease;
+}
+
+.sections-exit-active {
+	position: absolute;
+	transform: translateY(50px);
+	opacity: 0;
+}

@@ -1,0 +1,136 @@
+.contact_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 78%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+@media(max-width: 900px){
+	.contact_container {
+		width: auto;
+		padding: 0 18px;
+	}
+}
+
+@media(max-width: 800px){
+	.contact_container {
+		flex-direction: column;
+	}
+}
+
+.address_container {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-right: 9px;
+	box-sizing: border-box;
+}
+
+@media(max-width: 800px){
+	.address_container {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-right: 0;
+		margin-bottom: 18px;
+	}
+}
+
+.form_container {
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-left: 9px;
+	box-sizing: border-box;
+}
+
+@media(max-width: 800px){
+	.form_container {
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-left: 0;
+	}
+}
+
+.form_container label {
+	position: relative;
+	display: block;
+}
+
+.form_container [type="text"],
+.form_container [type="email"],
+.form_container textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: #fff;
+	padding-left: 10px;
+}
+
+.form_container [type="text"],
+.form_container [type="email"] {
+	height: 45px;
+	line-height: 45px;
+	margin-bottom: 24px;
+	border-bottom: 2px solid blue;
+}
+
+.form_container [type="text"]:focus,
+.form_container [type="email"]:focus {
+	outline: transparent;
+}
+
+.form_container textarea {
+	height: 200px;
+	padding-top: 12px;
+	margin-bottom: 24px;
+	border-bottom: 2px solid blue;
+}
+
+.form_container textarea:focus {
+	outline: transparent;
+}
+
+.label_text {
+	position: absolute;
+	left: 10px;
+	z-index: 1;
+	top: 10px;
+	pointer-events: none;
+}
+
+.letter {
+	display: block;
+	float: left;
+	transition: all 0.15s ease;
+}
+
+.letters-enter-active .letter,
+.letters-enter-done .letter {
+	transform: translateY(-35px);
+	color: blue;
+}
+
+.letters-exit .letter {
+	transform: translateY(-35px);
+	color: blue;
+}
+
+.letters-exit-done .letter {
+	transform: translateY(0);
+	color: #333;
+}
+
+.form_container [type="submit"] {
+	padding: 12px 0;
+	box-sizing: border-box;
+	display: inline-block;
+	background: blue;
+	color: #fff;
+	cursor: pointer;
+	width: 100%;
+	box-shadow: none;
+	border: none;
+}

@@ -71,6 +71,7 @@
 .portfolio_item_container img {
 	display: block;
 	max-width: 100%;
+	min-height: 1px; /** for ie. **/
 	cursor: pointer;
 	position: relative;
 	z-index: 1;

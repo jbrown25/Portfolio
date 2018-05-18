@@ -192,6 +192,8 @@ export default class Navigation extends Component {
 						<li><Link to='/portfolio'>Portfolio</Link></li>
 						<li><Link to='/resume'>Resume</Link></li>
 						<li><Link to='/contact'>Contact</Link></li>
+						<li><a href='https://www.linkedin.com/in/justin-brown-96528982' target='_blank'><i className='fa fa-linkedin'></i></a></li>
+						<li><a href='https://github.com/jbrown25' target='_blank'><i className='fa fa-github'></i></a></li>
 					</ul>
 				</nav>
 				<button className='nav_toggle' onClick={this.handleClick} ref={el => this.toggle = el}>

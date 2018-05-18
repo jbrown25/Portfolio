@@ -161,5 +161,7 @@
 	box-sizing: border-box;
 	display: inline-block;
 	background: blue;
-	color: #fff;	
+	color: #fff;
+	box-shadow: none;
+	border: none;	
 }

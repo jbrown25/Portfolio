@@ -32,11 +32,13 @@ small, .font_small {font-size: 0.75em;}
 
 a,
 a:visited {
-  text-decoration: none;
+  text-decoration: underline;
   color: blue;
+  color: #3061A5;
 }
 
 a:hover,
 a:active {
   text-decoration: none;
+  color: #263F73;
 }

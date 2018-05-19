@@ -84,10 +84,16 @@
 
 .portfolio_item_container button {
 	border: none;
-	color: #fff;
+	color: #f7f7f7;
 	cursor: pointer;
 	padding: 12px 0;
-	background: blue;
+	background: #3061A5;
+	box-shadow: 0 5px 12px rgba(0,0,0, 0.25);
+	transition: background 0.25s ease;
+}
+
+.portfolio_item_container button:hover {
+	background: #263F73;
 }
 
 .portfolio_item_container button:focus,

@@ -52,7 +52,7 @@ class About extends Component {
 					<div className='work_sample_row'>
 						{this.renderWorkSamples()}
 					</div>
-					<Link to='/portfolio' onClick={window.scrollTo(0, 0)} className='link_to_portfolio'>See more of my work >></Link>
+					<Link to='/portfolio' onClick={window.scrollTo(0, 0)} className='link_to_portfolio'>See more of my work</Link>
 				</div>
 				<div className='about_seattle' style={{backgroundImage: `url(${seattle})`}}>
 					<div className='about_contact'>

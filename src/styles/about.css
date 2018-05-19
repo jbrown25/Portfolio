@@ -109,11 +109,32 @@
 
 .link_to_portfolio,
 .link_to_portfolio:visited {
-	padding: 12px 24px;
+	position: relative;
+	padding: 12px 36px;
+	padding-right: 48px;
+	text-decoration: none;
 	box-sizing: border-box;
 	display: inline-block;
-	background: blue;
-	color: #fff;
+	background: #3061A5;
+	color: #f7f7f7;
+	box-shadow: 0 5px 12px rgba(0,0,0, 0.25);
+	transition: background 0.25s ease;
+}
+
+.link_to_portfolio:hover {
+	background: #263F73;
+}
+
+.link_to_portfolio::after {
+	font-family: "FontAwesome";
+	content: "\f101";
+	position: absolute;
+	right: 20px;
+	transition: transform 0.25s ease;
+}
+
+.link_to_portfolio:hover::after {
+	transform: translateX(4px);
 }
 
 @media(max-width: 800px){
@@ -157,11 +178,17 @@
 
 .link_to_contact,
 .link_to_contact:visited {
-	padding: 12px 24px;
+	padding: 12px 36px;
+	text-decoration: none;
 	box-sizing: border-box;
 	display: inline-block;
-	background: blue;
-	color: #fff;
-	box-shadow: none;
-	border: none;	
+	background: #3061A5;
+	color: #f7f7f7;
+	box-shadow: 0 5px 12px rgba(0,0,0, 0.25);
+	border: none;
+	transition: background 0.25s ease;
+}
+
+.link_to_contact:hover {
+	background: #263F73;
 }

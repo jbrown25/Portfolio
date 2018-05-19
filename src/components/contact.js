@@ -34,11 +34,11 @@ export default class Contact extends Component {
 					<div className='address_container' ref={el => this.address_container = el}>
 						<h1 ref={el => this.thingy = el}>Get in touch.</h1>
 						<p>For inquiries regarding projects, jobs, or if you just need a hand with your homework.  Let me know how I can help!</p>
+						<span className='contact_email'>Justin.Brown345@gmail.com</span><br />
+						<span className='contact_phone'>(509) 531-1368</span>
 						<address>
-							<i className='fa fa-envelope-o'></i> Justin.Brown345@gmail.com<br />
-							<i className='fa fa-phone'></i> (509) 531-1368<br />
-							<i className='fa fa-map-marker'></i> 425 23rd Ave S Apt A205<br />
-							Seattle, WA 98144<br />
+							425 23rd Ave S Apt A205<br />
+							Seattle, WA 98144
 						</address>
 					</div>
 					<div className='form_container' ref={el => this.form_container = el}>

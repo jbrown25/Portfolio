@@ -61,6 +61,16 @@
 	border: none;
 	background: #fff;
 	padding-left: 10px;
+	box-shadow: 0 10px 20px 0 rgba(46, 61, 73, 0.15);
+	border-bottom: 2px solid;
+	border-color: #777;
+	transition: border-color 0.5s ease;
+}
+
+.form_container [type="text"]:focus,
+.form_container [type="email"]:focus,
+.form_container textarea:focus {
+	border-color: #2660A4;
 }
 
 .form_container [type="text"],
@@ -68,7 +78,6 @@
 	height: 45px;
 	line-height: 45px;
 	margin-bottom: 24px;
-	border-bottom: 2px solid blue;
 }
 
 .form_container [type="text"]:focus,
@@ -80,7 +89,6 @@
 	height: 200px;
 	padding-top: 12px;
 	margin-bottom: 24px;
-	border-bottom: 2px solid blue;
 }
 
 .form_container textarea:focus {
@@ -104,12 +112,12 @@
 .letters-enter-active .letter,
 .letters-enter-done .letter {
 	transform: translateY(-35px);
-	color: blue;
+	color: #2660A4;
 }
 
 .letters-exit .letter {
 	transform: translateY(-35px);
-	color: blue;
+	color: #2660A4;
 }
 
 .letters-exit-done .letter {
@@ -121,7 +129,7 @@
 	padding: 12px 0;
 	box-sizing: border-box;
 	display: inline-block;
-	background: blue;
+	background: #2660A4;
 	color: #fff;
 	cursor: pointer;
 	width: 100%;

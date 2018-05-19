@@ -51,6 +51,10 @@
     margin-bottom: 0;
 }
 
+.main_nav .mobile_menu a {
+    color: #8D2BFF;
+}
+
 @media(max-width: 900px){
     .mobile_menu {
         position: absolute;
@@ -83,7 +87,12 @@
 }
 
 .main_nav a {
+    color: #ACE1EA;
+    transition: color 0.25s ease;
+}
 
+.main_nav a:hover {
+    color: #2DB8C4;
 }
 
 .nav_toggle_container {
@@ -99,7 +108,7 @@
     width: 60px;
     padding: 18px 15px;
     border: none;
-    background: orange;
+    background: #ACE1EA;
     border-radius: 50%;
     cursor: pointer;
     z-index: 902;
@@ -152,7 +161,7 @@
     height: 100%;
     border-radius: 50%;
     z-index: 100;
-    background: orange;
+    background: #ACE1EA;
     display: none;
 }
 

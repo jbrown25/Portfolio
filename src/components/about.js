@@ -26,6 +26,14 @@ class About extends Component {
 			duration: 500,
 			easing: 'easeOutQuad',
 			offset: '-=250'
+		})
+		.add({
+			targets: this.work_samples,
+			opacity: [0, 1],
+			translateY: [50, 0],
+			duration: 500,
+			easing: 'easeOutQuad',
+			offset: '-=250'
 		});
 	}
 
@@ -47,7 +55,7 @@ class About extends Component {
 						<img src={justin} alt='' />
 					</div>
 				</div>
-				<div className='work_sample_container'>
+				<div className='work_sample_container' ref={el => this.work_samples = el}>
 					<h2>Here is some of my work</h2>
 					<div className='work_sample_row'>
 						{this.renderWorkSamples()}
@@ -74,8 +82,6 @@ const WorkSample = (props) => {
 		</div>
 	);
 };
-
-
 
 function mapStateToProps(state){
 	return {

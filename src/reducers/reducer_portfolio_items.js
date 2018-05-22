@@ -78,6 +78,7 @@ export default function(){
 			full_description: 'An in-house customer relations management application for a landscaping and pest control company.',
 			image: crown_touch_feature,
 			tags: ['PHP', 'MySQL', 'Responsive Design', 'MVC', 'JavaScript', 'Photoshop'],
+			links: {},
 			gallery: [
 				crown_touch_gallery_one,
 				crown_touch_gallery_two,

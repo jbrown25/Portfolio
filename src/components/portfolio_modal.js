@@ -193,11 +193,22 @@ export default class PortfolioModal extends Component {
 			);
 		}
 
-		const {image, heading, full_description, gallery} = this.props.item;
+		const {image, heading, full_description, gallery, links} = this.props.item;
 		const {modalImageStyle} = this.state;
 		const display_gallery = gallery ? gallery.map((thumb, index) => {
 			return <div className='gallery_item_container' key={index}><a href={thumb} target='_blank'><img src={thumb} alt=''/></a></div>;
 		}) : null;
+
+		const get_links = () => {
+			const this_links = [];
+			if(links.site){
+				this_links.push(<li key={links.site}><a href={links.site} target='_blank' rel='noopener noreferrer'><i className='fa fa-link'></i></a></li>);
+			}
+			if(links.github){
+				this_links.push(<li key={links.github}><a href={links.github} target='_blank' rel='noopener noreferrer'><i className='fa fa-github'></i></a></li>);
+			}
+			return this_links;
+		}
 
 		return (
 			<div className='portfolio_modal' onClick={this.closeModal} ref={el => this.modal_parent = el}>
@@ -206,8 +217,7 @@ export default class PortfolioModal extends Component {
 					<div className='modal_content' ref={el => this.modal_content = el}>
 						<h2 ref={el => this.modal_heading = el}>{heading}</h2>
 						<ul className='modal_links'>
-							<li><a href='' target='_blank'><i className='fa fa-link'></i></a></li>
-							<li><a href='' target='_blank'><i className='fa fa-github'></i></a></li>
+							{get_links()}
 						</ul>
 						<p ref={el => this.modal_description = el} dangerouslySetInnerHTML={{__html: full_description}}></p>
 						<div className='modal_gallery'>

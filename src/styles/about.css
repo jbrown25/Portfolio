@@ -123,6 +123,7 @@
 
 .link_to_portfolio:hover {
 	background: #263F73;
+	color: #f7f7f7;
 }
 
 .link_to_portfolio::after {
@@ -190,5 +191,6 @@
 }
 
 .link_to_contact:hover {
+	color: #f7f7f7;
 	background: #263F73;
 }

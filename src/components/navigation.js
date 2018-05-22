@@ -131,7 +131,7 @@ export default class Navigation extends Component {
 			translateY: [50, 0],
 			duration: 250,
 			delay: (el, i, l) => {
-				return (100 * i);
+				return (50 * i);
 			},
 			easing: 'easeOutQuad'
 		});

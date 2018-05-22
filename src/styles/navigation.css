@@ -20,8 +20,6 @@
 @media(max-width: 900px){
     .main_nav.nav_open {
         display: flex;
-        justify-content: center;
-        align-items: center;
         overflow-y: auto;
     }
 }
@@ -41,6 +39,7 @@
 .mobile_menu {
     display: none;
     margin: 0;
+    margin: auto;
     padding-left: 0;
 }
 

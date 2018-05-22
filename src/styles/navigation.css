@@ -22,6 +22,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow-y: auto;
     }
 }
 
@@ -44,7 +45,7 @@
 }
 
 .mobile_menu li {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 }
 
 .mobile_menu li:last-child {
@@ -183,4 +184,18 @@
         right: 0;
         bottom: 0;
     }
+}
+
+.main_nav.nav_open .mobile_social {
+    margin: 0;
+    padding: 0;
+}
+
+.main_nav.nav_open .mobile_social > li {
+    display: inline-block;
+    font-size: 1em;
+}
+
+.main_nav.nav_open .mobile_social li:first-child {
+    margin-right: 24px;
 }

@@ -37,7 +37,6 @@ export default class Contact extends Component {
 						<span className='contact_email'>Justin.Brown345@gmail.com</span><br />
 						<span className='contact_phone'>(509) 531-1368</span>
 						<address>
-							425 23rd Ave S Apt A205<br />
 							Seattle, WA 98144
 						</address>
 					</div>

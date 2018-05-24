@@ -114,7 +114,7 @@ export default class Navigation extends Component {
 		const cornerSpace = Math.sqrt(Math.pow(windowWidth - toggleRect.left, 2) + Math.pow(toggleRect.bottom, 2));
 
 		const radius = Math.sqrt(Math.pow(maxSide, 2) * 2) + cornerSpace * 2;
-		const menuScaleRatio = radius / (Math.SQRT2 * 30); // root 2 * toggle width / 2.  Toggle width is 60, for now.
+		const menuScaleRatio = radius / (Math.SQRT2 * 29); // root 2 * toggle width / 2.  Toggle width is 60, for now.
 
 		const radial_timeline = anime.timeline();
 
@@ -147,7 +147,7 @@ export default class Navigation extends Component {
 		const cornerSpace = Math.sqrt(Math.pow(windowWidth - toggleRect.left, 2) + Math.pow(toggleRect.bottom, 2));
 
 		const radius = Math.sqrt(Math.pow(maxSide, 2) * 2) + cornerSpace * 2;
-		const menuScaleRatio = radius / (Math.SQRT2 * 30);
+		const menuScaleRatio = radius / (Math.SQRT2 * 29);
 
 		const radial_timeline = anime.timeline();
 		radial_timeline

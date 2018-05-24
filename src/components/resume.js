@@ -172,6 +172,7 @@ export default class Resume extends Component {
 									<li>Developed custom jQuery plugins and WordPress widgets for client sites</li>
 									<li>Debugged and refactored legacy PHP applications</li>
 									<li>Debugged and maintained WordPress sites</li>
+									<li>Helped update and maintain dozens of sites hosted on the Weebly platform</li>
 									<li>Wrote documentation and provided support for clients via email and video chat</li>
 								</ul>
 							</div>
@@ -230,7 +231,7 @@ export default class Resume extends Component {
 								<h4>Washington State University</h4>
 							</div>
 							<div className='school_location'>
-								<span className='school_city_state'>Seattle, WA</span>
+								<span className='school_city_state'>Pullman, WA</span>
 							</div>
 						</div>
 					</div>

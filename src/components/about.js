@@ -48,8 +48,10 @@ class About extends Component {
 			<section className='about'>
 				<div className='intro_container'>
 					<div className='intro' ref={el => this.intro = el}>
-						<h1>Hi, I am Justin.</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consectetur tempor velit ac venenatis. In maximus enim at ornare maximus. Ut sit amet ex iaculis lorem molestie tempus. In sed mauris scelerisque, convallis justo sed, tempor odio. Vivamus eget malesuada mauris. Suspendisse elementum, magna nec aliquam aliquam, quam dui hendrerit ligula, eget tincidunt velit tortor vel enim. Nullam quis ultrices enim, sit amet accumsan mi. Cras hendrerit urna sagittis justo consequat congue.</p>
+						<h1>Hi, I'm Justin.</h1>
+						<p>I am a Seattle-based web developer who enjoys building things and tackling difficult problems.  I have worked on a wide variety of projects including mobile games with Unity3D, database driven web applications, single page applications, cloud deployments with AWS, WordPress sites, and static landing pages.</p>
+						<p>I once won an AWS trivia night.  Well my team did anyway, but I helped.</p>
+						<p>In my spare time I enjoy lifting weights, watching movies, and playing the violin.</p>
 					</div>
 					<div className='intro_img_container' ref={el => this.intro_image = el}>
 						<img src={justin} alt='' />

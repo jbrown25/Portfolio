@@ -51,7 +51,11 @@ export default function(){
 			id: 1,
 			heading: 'Congressional Finance App',
 			short_description: 'Tool for visualizing campaign finace data for members of the US House of Representatives.',
-			full_description: 'Tool for visualizing campaign finace data for members of the US House of Representatives.',
+			full_description: `
+				This is a web app that lets you search and view graphs of campaign finance data  for members of congress.  I built it because campaign finance reform is a big topic in the news and I wanted to learn more about the issue.  The data is restricted to members of the US House of Representatives, and doesn’t cover “dark” money or super PACs.<br /><br />
+				I would like to extend this project with other political data visualizations once I have time.  One idea I have is to compare district lean with money spent to see how money flows when races are more competitive.  I need to get access to a bigger data set first, though.<br />
+				Built with React and Redux.  Data courtesy of the <a href='https://opensecrets.org' target='_blank' rel='noopener noreferrer'>Center for Responsive Politics</a>.
+			`,
 			image: congress_feature,
 			tags: ['React', 'Chart.js', 'AWS Lambda', 'Sass', 'ES6', 'Sass'],
 			links: {
@@ -63,7 +67,7 @@ export default function(){
 			id: 2,
 			heading: 'Office Ready Demo Toolkit',
 			short_description: 'Landing page for a Microsoft Office sales event. I wrote the code and worked with a design team.',
-			full_description: 'Landing page for a Microsoft Office sales event. I wrote the code and worked with a design team.',
+			full_description: 'Landing page for a Microsoft Office sales event. I wrote the code and worked with a design team.  It was a fun project.',
 			image: toolkit_feature,
 			tags: ['JavaScript', 'Responsive Design', 'Sass', 'MVC'],
 			links: {
@@ -75,7 +79,15 @@ export default function(){
 			id: 3,
 			heading: 'Crown Touch Landscape Manager',
 			short_description: 'An in-house customer relations management application for a landscaping and pest control company.',
-			full_description: 'An in-house customer relations management application for a landscaping and pest control company.',
+			full_description: `
+				This was an in-house, legacy customer relationship management application built with PHP and MySQL that I took over from a previous developer.  I was brought in to debug and refactor it, as well as rebuild the UI to be responsive.  I also refactored and redesigned the customer portal.<br />
+				I added the following features:
+				<ul>
+					<li>“Quick Bids”: The company could suggest an area of improvement for one of their clients, with a description of the job, a bid price, and several photos of the area in need of work.  The bid gets emailed to the client and appears in their portal for review.</li>	
+					<li>A water report page for tracking water usage on jobs</li>
+					<li>A map page for uploading and viewing property maps</li>
+				</ul>
+			`,
 			image: crown_touch_feature,
 			tags: ['PHP', 'MySQL', 'Responsive Design', 'MVC', 'JavaScript', 'Photoshop'],
 			links: {},
@@ -90,7 +102,7 @@ export default function(){
 			id: 4,
 			heading: 'Welshon\'s Chiropractic',
 			short_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap. Customizer ready and includes some widgets I built.',
-			full_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap. Customizer ready and includes some widgets I built.',
+			full_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap.  I built the testimonials widget so the site administrator can add detailed testimonials with stars and links without writing any code.',
 			image: welshons_feature,
 			tags: ['WordPress', 'Responsive Design', 'PHP', 'JavaScript', 'jQuery'],
 			links: {
@@ -134,7 +146,7 @@ export default function(){
 			id: 7,
 			heading: 'Fit Chipotle',
 			short_description: 'Site about the health benefits of a high-burrito diet. Built with Bootstrap.',
-			full_description: 'Site about the health benefits of a high-burrito diet. Built with Bootstrap. Designed icon in Photoshop.  The "burrito" is an AriZona Iced Tea can wrapped in foil.',
+			full_description: 'Site about the health benefits of a high-burrito diet. Built with Bootstrap. Designed icon in Photoshop.  The "burrito" is an AriZona Iced Tea can wrapped in foil.  Honestly, I\'m not sure why I made this site.',
 			image: fit_chipotle_feature,
 			tags: ['Responsive Design', 'Bootstrap', 'Photoshop', 'Animate.css', 'WOW.js'],
 			links: {
@@ -145,11 +157,11 @@ export default function(){
 			id: 8,
 			heading: 'My Old Portfolio',
 			short_description: 'My old portfolio.  Not using it anymore, but I still like it.',
-			full_description: 'My old portfolio.  Not using it anymore, but I still like it.',
+			full_description: 'My old portfolio.  Not using it anymore, but I still like it.  I built it with three.js, a WebGL library.',
 			image: justin_portfolio_feature,
 			tags: ['JavaScript', 'three.js', 'skeleton.css', 'CSS animation'],
 			links: {
-				site: 'http://justinbrowndev.com'
+				site: 'http://justin-old-portfolio.s3-website-us-west-2.amazonaws.com/'
 			}
 		},
 		{
@@ -172,7 +184,16 @@ export default function(){
 			id: 10,
 			heading: 'Drive Car',
 			short_description: 'Drive Car is a top-down driving game. The obstacle cars change lanes, your car speeds up over time, and the environment changes. It was challenging, yet fun to build. I used Unity3D, C#, UnityScript, Sketchup, and Photoshop to create it.',
-			full_description: 'Drive Car is a top-down driving game. The obstacle cars change lanes, your car speeds up over time, and the environment changes. It was challenging, yet fun to build. I used Unity3D, C#, UnityScript, Sketchup, and Photoshop to create it.',
+			full_description: `
+				Drive Car was my most successful game with over 1 million installs.<br />
+				I had two theories I wanted to test when I made this game:
+				<ol>
+					<li>People like driving games because they like cars</li>
+					<li>The most important search keywords were in the title of a game</li>
+				</ol>
+				I suspected that users didn’t respond to “Glow Rider” as much as other games with similar mechanics in part because those other games had cars and my game had a glowing bike.  I also didn’t think “glow” or “rider” were important search terms.  So, I developed Drive Car with a more realistic setting and several cars to choose from, and gave it the terrible name of “Drive Car”.<br />
+				I have no way of knowing if my theories were correct, but Drive Car consistently rated highly for searches of “drive” and “car” and averaged 2000 new installs per day for over a year.
+			`,
 			image: drive_car_feature,
 			tags: ['Unity3D', 'C#', 'Photoshop', 'SketchUp'],
 			links: {

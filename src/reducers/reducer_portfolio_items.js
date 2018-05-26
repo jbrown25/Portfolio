@@ -49,22 +49,6 @@ export default function(){
 	return [
 		{
 			id: 1,
-			heading: 'Congressional Finance App',
-			short_description: 'Tool for visualizing campaign finace data for members of the US House of Representatives.',
-			full_description: `
-				This is a web app that lets you search and view graphs of campaign finance data  for members of congress.  I built it because campaign finance reform is a big topic in the news and I wanted to learn more about the issue.  The data is restricted to members of the US House of Representatives, and doesn’t cover “dark” money or super PACs.<br /><br />
-				I would like to extend this project with other political data visualizations once I have time.  One idea I have is to compare district lean with money spent to see how money flows when races are more competitive.  I need to get access to a bigger data set first, though.<br />
-				Built with React and Redux.  Data courtesy of the <a href='https://opensecrets.org' target='_blank' rel='noopener noreferrer'>Center for Responsive Politics</a>.
-			`,
-			image: congress_feature,
-			tags: ['React', 'Chart.js', 'AWS Lambda', 'Sass', 'ES6', 'Sass'],
-			links: {
-				github: 'https://github.com/jbrown25/Congressional-Finance-App',
-				site: 'http://congressional-finance-app.s3-website-us-west-2.amazonaws.com/'
-			}
-		},
-		{
-			id: 2,
 			heading: 'Office Ready Demo Toolkit',
 			short_description: 'Landing page for a Microsoft Office sales event. I wrote the code and worked with a design team.',
 			full_description: 'Landing page for a Microsoft Office sales event. I wrote the code and worked with a design team.  It was a fun project.',
@@ -76,7 +60,7 @@ export default function(){
 			gallery: [toolkit_gallery]
 		},
 		{
-			id: 3,
+			id: 2,
 			heading: 'Crown Touch Landscape Manager',
 			short_description: 'An in-house customer relations management application for a landscaping and pest control company.',
 			full_description: `
@@ -99,29 +83,7 @@ export default function(){
 			]
 		},
 		{
-			id: 4,
-			heading: 'Welshon\'s Chiropractic',
-			short_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap. Customizer ready and includes some widgets I built.',
-			full_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap.  I built the testimonials widget so the site administrator can add detailed testimonials with stars and links without writing any code.',
-			image: welshons_feature,
-			tags: ['WordPress', 'Responsive Design', 'PHP', 'JavaScript', 'jQuery'],
-			links: {
-				site: 'http://welshonschiropractic.com/'
-			}
-		},
-		{
-			id: 5,
-			heading: 'Chris Steele',
-			short_description: 'Chris Steele, film and television actor. Custom WordPress theme based on underscores and built with Twitter Bootstrap.',
-			full_description: 'Chris Steele, film and television actor. Custom WordPress theme based on underscores and built with Twitter Bootstrap.',
-			image: steele_feature,
-			tags: ['WordPress', 'Responsive Design', 'PHP', 'JavaScript', 'jQuery'],
-			links: {
-				site: 'http://actorchrissteele.com/'
-			}
-		},
-		{
-			id: 6,
+			id: 3,
 			heading: 'AllClients',
 			short_description: 'I designed and built over a dozen landing page templates for AllClients, a cloud-based CRM company.',
 			full_description: 'I designed and built over a dozen landing page templates for AllClients, a cloud-based CRM company. I also developed a jQuery plugin that formats and clones the lead generation form, as well as smooths out some of the bugs in the landing page editor.',
@@ -143,7 +105,45 @@ export default function(){
 			]
 		},
 		{
-			id: 7,
+			id: 4,
+			heading: 'Congressional Finance App',
+			short_description: 'Tool for visualizing campaign finace data for members of the US House of Representatives.',
+			full_description: `
+				This is a web app that lets you search and view graphs of campaign finance data  for members of congress.  I built it because campaign finance reform is a big topic in the news and I wanted to learn more about the issue.  The data is restricted to members of the US House of Representatives, and doesn’t cover “dark” money or super PACs.<br /><br />
+				I would like to extend this project with other political data visualizations once I have time.  One idea I have is to compare district lean with money spent to see how money flows when races are more competitive.  I need to get access to a bigger data set first, though.<br />
+				Built with React and Redux.  Data courtesy of the <a href='https://opensecrets.org' target='_blank' rel='noopener noreferrer'>Center for Responsive Politics</a>.
+			`,
+			image: congress_feature,
+			tags: ['React', 'Chart.js', 'AWS Lambda', 'Sass', 'ES6', 'Sass'],
+			links: {
+				github: 'https://github.com/jbrown25/Congressional-Finance-App',
+				site: 'http://congressional-finance-app.s3-website-us-west-2.amazonaws.com/'
+			}
+		},
+		{
+			id: 5,
+			heading: 'Welshon\'s Chiropractic',
+			short_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap. Customizer ready and includes some widgets I built.',
+			full_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap.  I built the testimonials widget so the site administrator can add detailed testimonials with stars and links without writing any code.',
+			image: welshons_feature,
+			tags: ['WordPress', 'Responsive Design', 'PHP', 'JavaScript', 'jQuery'],
+			links: {
+				site: 'http://welshonschiropractic.com/'
+			}
+		},
+		/*{
+			id: 5,
+			heading: 'Chris Steele',
+			short_description: 'Chris Steele, film and television actor. Custom WordPress theme based on underscores and built with Twitter Bootstrap.',
+			full_description: 'Chris Steele, film and television actor. Custom WordPress theme based on underscores and built with Twitter Bootstrap.',
+			image: steele_feature,
+			tags: ['WordPress', 'Responsive Design', 'PHP', 'JavaScript', 'jQuery'],
+			links: {
+				site: 'http://actorchrissteele.com/'
+			}
+		},*/
+		{
+			id: 6,
 			heading: 'Fit Chipotle',
 			short_description: 'Site about the health benefits of a high-burrito diet. Built with Bootstrap.',
 			full_description: 'Site about the health benefits of a high-burrito diet. Built with Bootstrap. Designed icon in Photoshop.  The "burrito" is an AriZona Iced Tea can wrapped in foil.  Honestly, I\'m not sure why I made this site.',
@@ -154,7 +154,7 @@ export default function(){
 			}
 		},
 		{
-			id: 8,
+			id: 7,
 			heading: 'My Old Portfolio',
 			short_description: 'My old portfolio.  Not using it anymore, but I still like it.',
 			full_description: 'My old portfolio.  Not using it anymore, but I still like it.  I built it with three.js, a WebGL library.',
@@ -165,7 +165,7 @@ export default function(){
 			}
 		},
 		{
-			id: 9,
+			id: 8,
 			heading: 'Apocalypse of Zombies! Shooter',
 			short_description: 'First person survival/horror shooter for Android. Features virtual storefront, incentivized installs, intuitive touch-based controls, and immersive 3D graphics.',
 			full_description: 'First person survival/horror shooter for Android. Features virtual storefront, incentivized installs, intuitive touch-based controls, and immersive 3D graphics.  I was partly inspired by <a href="https://en.wikipedia.org/wiki/Slender:_The_Eight_Pages">Slender: The Eight Pages</a>, in which the player\'s sole light source is a flashlight.  I thought it added a lot to the game, and I didn\'t see too many other mobile zombie shooters with that feature.<br /><br />Originally I implemented what I thought was a novel control system: a control stick to move forward, backwards, and strafe left and right, a button to fire your weapon, and the device\'s accelerometer (gyroscope) to aim and turn left or right.  Most mobile shooters have a restrictive control system in which you can aim or fire with one finger, but not both at the same time.  No one who tried that version found the controls as intuitive as I did, however, so I scrapped it and built this instead.',
@@ -181,7 +181,7 @@ export default function(){
 			]
 		},
 		{
-			id: 10,
+			id: 9,
 			heading: 'Drive Car',
 			short_description: 'Drive Car is a top-down driving game. The obstacle cars change lanes, your car speeds up over time, and the environment changes. It was challenging, yet fun to build. I used Unity3D, C#, UnityScript, Sketchup, and Photoshop to create it.',
 			full_description: `
@@ -205,7 +205,7 @@ export default function(){
 			]
 		},
 		{
-			id: 11,
+			id: 10,
 			heading: 'Drive Car 2',
 			short_description: 'Sequel to Drive Car with a landscape view. Implemented better shaders, ad mediation, Google Play Games Services.',
 			full_description: 'Sequel to Drive Car with a landscape view. Implemented better shaders, ad mediation, Google Play Games Services.',
@@ -220,7 +220,7 @@ export default function(){
 			]
 		},
 		{
-			id: 12,
+			id: 11,
 			heading: 'Drive Moto',
 			short_description: 'Drive Car 2, but with a motorcycle. Rigged models, ragdoll physics.',
 			full_description: 'Drive Car 2, but with a motorcycle. Rigged models, ragdoll physics.',
@@ -236,7 +236,7 @@ export default function(){
 			]
 		},
 		{
-			id: 13,
+			id: 12,
 			heading: 'Glow Rider',
 			short_description: 'Glow Rider is also a top-down driving game, but with Tron-inspired graphics. You play by tilting the device and dodging microchips. It was my first game.',
 			full_description: 'Glow Rider is also a top-down driving game, but with Tron-inspired graphics. You play by tilting the device and dodging microchips. It was my first game.',

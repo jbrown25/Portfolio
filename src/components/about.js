@@ -6,6 +6,9 @@ import justin from '../images/justin.jpg';
 import seattle from '../images/seattle.jpeg';
 import '../styles/about.css';
 
+//number of samples to show on front page
+const ABOUT_WORK_QUANT = 3;
+
 class About extends Component {
 
 	componentDidMount(){
@@ -38,7 +41,7 @@ class About extends Component {
 	}
 
 	renderWorkSamples(){
-		return this.props.portfolio_items.slice(0, 3).map((item) => {
+		return this.props.portfolio_items.slice(0, ABOUT_WORK_QUANT).map((item) => {
 			return <WorkSample key={item.id} item={item} />;
 		});
 	}

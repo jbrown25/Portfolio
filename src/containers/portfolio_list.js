@@ -21,16 +21,6 @@ class PortfolioList extends Component {
 	}
 
 	componentDidMount(){
-		/*const portfolio_anim = anime({
-			targets: this.portfolio_container.querySelectorAll('.portfolio_item_container'),
-			opacity: [0, 1],
-			translateY: [50, 0],
-			duration: 500,
-			delay: (el, i, l) => {
-				return 250 + (i * 100);
-			},
-			easing: 'easeOutQuad'
-		});*/
 
 		const portfolio_timeline = anime.timeline();
 		portfolio_timeline

@@ -115,7 +115,7 @@ export default class Resume extends Component {
 							</div>
 							<div className='experience_job_description'>
 								<ul>
-									<li>Designed and build landing pages, WordPress websites, and Unity games</li>
+									<li>Designed and built landing pages, WordPress websites, and Unity games</li>
 									<li>Wrote documentation and provided continuing support for custom websites</li>
 									<li>Controlled every stage of the projects including gameplay design, development, QA testing, beta testing, and release</li>
 									<li>Built Sketchup models, used 3rd party art and models, created and edited textures in Photoshop</li>

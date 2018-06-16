@@ -218,7 +218,7 @@ export default class Resume extends Component {
 						<h2>Education</h2>
 						<div className='school'>
 							<div className='school_details'>
-								<h3>Coursework in Web Design and Development</h3>
+								<h3>Certificate in Web Development</h3>
 								<h4>Seattle Central College</h4>
 							</div>
 							<div className='school_location'>

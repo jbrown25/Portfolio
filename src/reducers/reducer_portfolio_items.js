@@ -1,7 +1,7 @@
 //feature images
 import congress_feature from '../images/feature_images/congress.jpg';
 import crown_touch_feature from '../images/feature_images/crown_touch.jpg';
-import steele_feature from '../images/feature_images/chris_steele.jpg';
+//import steele_feature from '../images/feature_images/chris_steele.jpg';
 import drive_car_feature from '../images/feature_images/drive_car.jpg';
 import drive_car_two_feature from '../images/feature_images/drive_car2.jpg';
 import drive_moto_feature from '../images/feature_images/drive_moto.jpg';
@@ -12,6 +12,10 @@ import toolkit_feature from '../images/feature_images/toolkit.jpg';
 import welshons_feature from '../images/feature_images/welshons.jpg';
 import zombies_feature from '../images/feature_images/zombies.jpg';
 import allclients_feature from '../images/feature_images/allclients.jpg';
+import telos_feature from '../images/feature_images/telos.jpg';
+import fit_guy_feature from '../images/feature_images/fit_after_40.jpg';
+import drakos_feature from '../images/feature_images/drakoskeep.jpg';
+import goodblock_feature from '../images/feature_images/goodblockio.jpg';
 
 //gallery images
 import crown_touch_gallery_one from '../images/gallery_images/crown_touch3.jpg';
@@ -44,11 +48,53 @@ import drive_moto_gallery_one from '../images/gallery_images/drive_moto1.jpg';
 import drive_moto_gallery_two from '../images/gallery_images/drive_moto2.jpg';
 import drive_moto_gallery_three from '../images/gallery_images/drive_moto3.jpg';
 
+import telos_gallery_one from '../images/gallery_images/telos1.jpg';
+import telos_gallery_two from '../images/gallery_images/telos2.jpg';
+
+import drakos_gallery_one from '../images/gallery_images/drakos1.jpg';
+import drakos_gallery_two from '../images/gallery_images/drakos2.jpg';
+
 
 export default function(){
 	return [
 		{
-			id: 1,
+			heading: 'Telos Foundation',
+			short_description: 'Website for a blockchain startup.',
+			full_description: 'Telos is a fork of EOS, a cryptocurrency. I build and maintained the website for the Telos Foundation. I also built some Node.js apps that collected data through the website.',
+			image: telos_feature,
+			tags: ['JavaScript', 'Responsive Design', 'React', 'Redux', 'Node.js'],
+			links: {
+				site: 'https://telosfoundation.io'
+			},
+			gallery: [
+				telos_gallery_one,
+				telos_gallery_two
+			]
+		},
+		{
+			heading: 'Drakos Keep',
+			short_description: 'Marketing site for Drakos Keep, a game developed for blockchain.',
+			full_description: 'Drakos Keep is a dragon-themed game that uses blockchain technology. It is one of the first blockchain games. I developed an animation-rich marketing site based on design comps.',
+			image: drakos_feature,
+			links: {
+				site: 'https://drakoskeep.com'
+			},
+			gallery: [
+				drakos_gallery_one,
+				drakos_gallery_two
+			]
+		},
+		{
+			heading: 'GoodBlock',
+			short_description: 'Website for a Telos block producer.',
+			full_description: 'GoodBlock was the team that created Telos. I built and maintained the website with React.',
+			image: goodblock_feature,
+			tags: ['JavaScript', 'Responsive Design', 'React', 'Redux'],
+			links: {
+				site: 'https://goodblock.io'
+			}
+		},
+		{
 			heading: 'Office Ready Demo Toolkit',
 			short_description: 'Landing page for a Microsoft Office sales event. I wrote the code and worked with a design team.',
 			full_description: 'Landing page for a Microsoft Office sales event. I wrote the code and worked with a design team.  It was a fun project.',
@@ -60,7 +106,6 @@ export default function(){
 			gallery: [toolkit_gallery]
 		},
 		{
-			id: 2,
 			heading: 'Crown Touch Landscape Manager',
 			short_description: 'An in-house customer relations management application for a landscaping and pest control company.',
 			full_description: `
@@ -83,7 +128,6 @@ export default function(){
 			]
 		},
 		{
-			id: 3,
 			heading: 'AllClients',
 			short_description: 'I designed and built over a dozen landing page templates for AllClients, a cloud-based CRM company.',
 			full_description: 'I designed and built over a dozen landing page templates for AllClients, a cloud-based CRM company. I also developed a jQuery plugin that formats and clones the lead generation form, as well as smooths out some of the bugs in the landing page editor.',
@@ -105,7 +149,6 @@ export default function(){
 			]
 		},
 		{
-			id: 4,
 			heading: 'Congressional Finance App',
 			short_description: 'Tool for visualizing campaign finace data for members of the US House of Representatives.',
 			full_description: `
@@ -121,15 +164,12 @@ export default function(){
 			}
 		},
 		{
-			id: 5,
 			heading: 'Welshon\'s Chiropractic',
 			short_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap. Customizer ready and includes some widgets I built.',
 			full_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap.  I built the testimonials widget so the site administrator can add detailed testimonials with stars and links without writing any code.',
 			image: welshons_feature,
 			tags: ['WordPress', 'Responsive Design', 'PHP', 'JavaScript', 'jQuery'],
-			links: {
-				site: 'http://welshonschiropractic.com/'
-			}
+			links: {}
 		},
 		/*{
 			id: 5,
@@ -143,7 +183,16 @@ export default function(){
 			}
 		},*/
 		{
-			id: 6,
+			heading: 'Fit After 40 Guy',
+			short_description: 'Fitness oriented website. Custom WordPress theme based on underscores and built with Bootstrap.',
+			full_description: 'Fitness oriented website. Custom WordPress theme based on underscores and built with Bootstrap.',
+			image: fit_guy_feature,
+			tags: ['WordPress', 'Responsive Design', 'PHP', 'JavaScript', 'jQuery'],
+			links: {
+				site: 'http://fitafter40guy.com'
+			}
+		},
+		{
 			heading: 'Fit Chipotle',
 			short_description: 'Site about the health benefits of a high-burrito diet. Built with Bootstrap.',
 			full_description: 'Site about the health benefits of a high-burrito diet. Built with Bootstrap. Designed icon in Photoshop.  The "burrito" is an AriZona Iced Tea can wrapped in foil.  Honestly, I\'m not sure why I made this site.',
@@ -154,7 +203,6 @@ export default function(){
 			}
 		},
 		{
-			id: 7,
 			heading: 'My Old Portfolio',
 			short_description: 'My old portfolio.  Not using it anymore, but I still like it.',
 			full_description: 'My old portfolio.  Not using it anymore, but I still like it.  I built it with three.js, a WebGL library.',
@@ -165,7 +213,6 @@ export default function(){
 			}
 		},
 		{
-			id: 8,
 			heading: 'Apocalypse of Zombies! Shooter',
 			short_description: 'First person survival/horror shooter for Android. Features virtual storefront, incentivized installs, intuitive touch-based controls, and immersive 3D graphics.',
 			full_description: 'First person survival/horror shooter for Android. Features virtual storefront, incentivized installs, intuitive touch-based controls, and immersive 3D graphics.  I was partly inspired by <a href="https://en.wikipedia.org/wiki/Slender:_The_Eight_Pages">Slender: The Eight Pages</a>, in which the player\'s sole light source is a flashlight.  I thought it added a lot to the game, and I didn\'t see too many other mobile zombie shooters with that feature.<br /><br />Originally I implemented what I thought was a novel control system: a control stick to move forward, backwards, and strafe left and right, a button to fire your weapon, and the device\'s accelerometer (gyroscope) to aim and turn left or right.  Most mobile shooters have a restrictive control system in which you can aim or fire with one finger, but not both at the same time.  No one who tried that version found the controls as intuitive as I did, however, so I scrapped it and built this instead.',
@@ -181,7 +228,6 @@ export default function(){
 			]
 		},
 		{
-			id: 9,
 			heading: 'Drive Car',
 			short_description: 'Drive Car is a top-down driving game. The obstacle cars change lanes, your car speeds up over time, and the environment changes. It was challenging, yet fun to build. I used Unity3D, C#, UnityScript, Sketchup, and Photoshop to create it.',
 			full_description: `
@@ -205,7 +251,6 @@ export default function(){
 			]
 		},
 		{
-			id: 10,
 			heading: 'Drive Car 2',
 			short_description: 'Sequel to Drive Car with a landscape view. Implemented better shaders, ad mediation, Google Play Games Services.',
 			full_description: 'Sequel to Drive Car with a landscape view. Implemented better shaders, ad mediation, Google Play Games Services.',
@@ -220,7 +265,6 @@ export default function(){
 			]
 		},
 		{
-			id: 11,
 			heading: 'Drive Moto',
 			short_description: 'Drive Car 2, but with a motorcycle. Rigged models, ragdoll physics.',
 			full_description: 'Drive Car 2, but with a motorcycle. Rigged models, ragdoll physics.',
@@ -236,7 +280,6 @@ export default function(){
 			]
 		},
 		{
-			id: 12,
 			heading: 'Glow Rider',
 			short_description: 'Glow Rider is also a top-down driving game, but with Tron-inspired graphics. You play by tilting the device and dodging microchips. It was my first game.',
 			full_description: 'Glow Rider is also a top-down driving game, but with Tron-inspired graphics. You play by tilting the device and dodging microchips. It was my first game.',

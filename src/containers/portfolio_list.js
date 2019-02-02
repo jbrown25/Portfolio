@@ -62,8 +62,8 @@ class PortfolioList extends Component {
 	}
 
 	renderItems(){
-		return this.props.portfolio_items.map((item) => {
-			return <PortfolioItem key={item.id} item={item} handleClick={(rect) => this.handleClick(item, rect)} />
+		return this.props.portfolio_items.map((item, i) => {
+			return <PortfolioItem key={i} item={item} handleClick={(rect) => this.handleClick(item, rect)} />
 		});
 	}
 

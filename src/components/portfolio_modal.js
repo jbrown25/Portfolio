@@ -196,7 +196,7 @@ export default class PortfolioModal extends Component {
 		const {image, heading, full_description, gallery, links} = this.props.item;
 		const {modalImageStyle} = this.state;
 		const display_gallery = gallery ? gallery.map((thumb, index) => {
-			return <div className='gallery_item_container' key={index}><a href={thumb} target='_blank'><img src={thumb} alt=''/></a></div>;
+			return <div className='gallery_item_container' key={index}><a href={thumb} target='_blank' rel='noopener noreferrer'><img src={thumb} alt=''/></a></div>;
 		}) : null;
 
 		const get_links = () => {

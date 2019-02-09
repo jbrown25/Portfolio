@@ -2,6 +2,55 @@ import React, {Component} from 'react';
 import anime from 'animejs';
 import '../styles/resume.css';
 
+const jobsList = [
+	{
+		organization: 'Horn of the Moon',
+		job_title: 'Web Developer',
+		job_date: 'June 2018 - Present',
+		job_location: 'Issaquah, WA',
+		description_list: [
+			'Developed and maintained websites and Node.js applications',
+			'Wrote and deployed AWS Lambda functions'
+		]
+	},
+	{
+		organization: 'JustinTech Mobile',
+		job_title: 'Freelance Web and Game Developer',
+		job_date: '2012 - Present',
+		job_location: 'Seattle, WA',
+		description_list: [
+			'Designed and built landing pages, WordPress websites, and Unity games',
+			'Wrote documentation and provided continuing support for custom websites',
+			'Controlled every stage of the projects including gameplay design, development, QA testing, beta testing, and release',
+			'Built Sketchup models, used 3rd party art and models, created and edited textures in Photoshop',
+			'Designed and built UI, icons'
+		]
+	},
+	{
+		organization: 'Indigo Slate',
+		job_title: 'Contract Front-End Developer',
+		job_date: 'July 2017',
+		job_location: 'Bellevue, WA',
+		description_list: [
+			'Developed a landing page for Microsoft Office Ready Demo Toolkit'
+		]
+	},
+	{
+		organization: 'Waking Girl Web Design',
+		job_title: 'Web Developer',
+		job_date: 'February 2016 - January 2017',
+		job_location: '',
+		description_list: [
+			'Built WordPress sites and landing page templates, designed creatives for ad campaigns',
+			'Developed custom jQuery plugins and WordPress widgets for client sites',
+			'Debugged and refactored legacy PHP applications',
+			'Debugged and maintained WordPress sites',
+			'Helped update and maintain dozens of sites hosted on the Weebly platform',
+			'Wrote documentation and provided support for clients via email and video chat'
+		]
+	}
+];
+
 export default class Resume extends Component {
 
 	componentDidMount(){
@@ -46,6 +95,14 @@ export default class Resume extends Component {
 			duration: 500,
 			easing: 'easeOutQuad',
 			offset: '-=250'
+		})
+		.add({
+			targets: this.resume_volunteer,
+			opacity: [0, 1],
+			translateY: [50, 0],
+			duration: 500,
+			easing: 'easeOutQuad',
+			offset: '-=250'
 		});
 	}
 
@@ -56,7 +113,7 @@ export default class Resume extends Component {
 					<div className='summary' ref={el => this.resume_summary = el}>
 						<h2>Summary</h2>
 						<ul>
-							<li>Over four years of experience developing for the web</li>
+							<li>Over five years of experience developing for the web</li>
 							<li>Strong skills with front-end technologies</li>
 							<li>Works well with others</li>
 							<li>Excellent experience working with a wide variety of clients and users</li>
@@ -74,17 +131,19 @@ export default class Resume extends Component {
 								<li>jQuery</li>
 							</ul>
 							<ul>
+								<li>Node.js</li>
+								<li>MongoDB</li>
 								<li>PHP</li>
 								<li>MySQL</li>
 								<li>WordPress</li>
 								<li>Java</li>
-								<li>C#</li>
 							</ul>
 							<ul>
-								<li>Android</li>
+								<li>C#</li>
 								<li>Unity3D</li>
 								<li>UnityScript</li>
 								<li>Photoshop</li>
+								<li>Sketch</li>
 								<li>Amazon Web Services</li>
 							</ul>
 						</div>
@@ -102,117 +161,19 @@ export default class Resume extends Component {
 					</div>					
 					<div className='experience' ref={el => this.resume_experience = el}>
 						<h2>Experience</h2>
-						<div className='experience_job'>
-							<div className='experience_job_header'>
-								<div className='experience_job_title'>
-									<h3>JustinTech Mobile</h3>
-									<h4>Freelance Web and Game Developer</h4>
-								</div>
-								<div className='experience_date_location'>
-									<span className='date'>2012 - Present</span><br />
-									<span className='location'>Seattle, WA</span>
-								</div>
-							</div>
-							<div className='experience_job_description'>
-								<ul>
-									<li>Designed and built landing pages, WordPress websites, and Unity games</li>
-									<li>Wrote documentation and provided continuing support for custom websites</li>
-									<li>Controlled every stage of the projects including gameplay design, development, QA testing, beta testing, and release</li>
-									<li>Built Sketchup models, used 3rd party art and models, created and edited textures in Photoshop</li>
-									<li>Designed and built UI, icons</li>
-								</ul>
-							</div>
-						</div>
-
-							<div className='experience_job_header'>
-								<div className='experience_job_title'>
-									<h3></h3>
-									<h4></h4>
-								</div>
-								<div className='experience_date_location'>
-
-								</div>
-							</div>
-							<div className='experience_job_description'>
-
-							</div>
-
-						<div className='experience_job'>
-
-							<div className='experience_job_header'>
-								<div className='experience_job_title'>
-									<h3>Indigo Slate</h3>
-									<h4>Contract Front-End Developer</h4>
-								</div>
-								<div className='experience_date_location'>
-									<span className='date'>June 2017</span><br />
-									<span className='location'>Bellevue, WA</span>
-								</div>
-							</div>
-							<div className='experience_job_description'>
-								<ul>
-									<li>Developed a landing page for Microsoft Office Ready Demo Toolkit</li>
-								</ul>
-							</div>
-						</div>
-						<div className='experience_job'>
-							<div className='experience_job_header'>
-								<div className='experience_job_title'>
-									<h3>Waking Girl Web Design</h3>
-									<h4>Web Developer</h4>
-								</div>
-								<div className='experience_date_location'>
-									<span className='date'>February 2016 - January 2017</span><br />
-									<span className='location'>Seattle, WA</span>
-								</div>
-							</div>
-							<div className='experience_job_description'>
-								<ul>
-									<li>Built WordPress sites and landing page templates, designed creatives for ad campaigns</li>
-									<li>Developed custom jQuery plugins and WordPress widgets for client sites</li>
-									<li>Debugged and refactored legacy PHP applications</li>
-									<li>Debugged and maintained WordPress sites</li>
-									<li>Helped update and maintain dozens of sites hosted on the Weebly platform</li>
-									<li>Wrote documentation and provided support for clients via email and video chat</li>
-								</ul>
-							</div>
-						</div>
-						<div className='experience_job'>
-							<div className='experience_job_header'>
-								<div className='experience_job_title'>
-									<h3>Spectrum Information Services</h3>
-									<h4>Document Imaging Tech</h4>
-								</div>
-								<div className='experience_date_location'>
-									<span className='date'>2008 - 2011</span><br />
-									<span className='location'>Seattle, WA</span>
-								</div>
-							</div>
-							<div className='experience_job_description'>
-								<ul>
-									<li>Prepared and scanned documents</li>
-									<li>Helped instruct new employees on equipment and software use</li>
-								</ul>
-							</div>
-						</div>
-						<div className='experience_job'>
-							<div className='experience_job_header'>
-								<div className='experience_job_title'>
-									<h3>UNC-Chapel Hill Dept of Economics</h3>
-									<h4>Teaching Assistant</h4>
-								</div>
-								<div className='experience_date_location'>
-									<span className='date'>2007 - 2008</span><br />
-									<span className='location'>Chapel Hill, NC</span>
-								</div>
-							</div>
-							<div className='experience_job_description'>
-								<ul>
-									<li>Graded papers and proctored quizzes for intermediate economics course</li>
-									<li>Held office hours and helped undergraduates with the material</li>
-								</ul>
-							</div>
-						</div>
+						{
+							jobsList.map((job, i) => {
+								return (
+									<Job
+										key={i}
+										organization={job.organization}
+										job_title={job.job_title}
+										job_date={job.job_date}
+										job_location={job.job_location}
+										description_list={job.description_list} />
+								);
+							})
+						}
 					</div>
 					<div className='education' ref={el => this.resume_education = el}>
 						<h2>Education</h2>
@@ -235,8 +196,50 @@ export default class Resume extends Component {
 							</div>
 						</div>
 					</div>
+					<div className='volunteer' ref={el => this.resume_volunteer = el}>
+						<h2>Volunteer Experience</h2>
+						<div className='experience_job'>
+							<div className='experience_job_header'>
+								<div className='experience_job_title'>
+									<h3>Transplant Recipients International Organization</h3>
+									<h4>Web Developer</h4>
+								</div>
+								<div className='experience_date_location'>
+									<span className='date'>August 2018 - Present</span><br />
+									<span className='location'>Seattle, WA</span>
+								</div>
+							</div>
+							<div className='experience_job_description'>
+								<ul>
+									<li>Redesigning and developing WordPress site for the Seattle branch</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		);	
 	}
 }
+
+const Job = props => {
+	return (
+		<div className='experience_job'>
+			<div className='experience_job_header'>
+				<div className='experience_job_title'>
+					<h3>{props.organization}</h3>
+					<h4>{props.job_title}</h4>
+				</div>
+				<div className='experience_date_location'>
+					<span className='date'>{props.job_date}</span><br />
+					<span className='location'>{props.job_location}</span>
+				</div>
+			</div>
+			<div className='experience_job_description'>
+				<ul>
+					{props.description_list.map((item, i) => <li key={i}>{item}</li>)}
+				</ul>
+			</div>
+		</div>
+	);
+};

@@ -16,6 +16,7 @@ import telos_feature from '../images/feature_images/telos.jpg';
 import fit_guy_feature from '../images/feature_images/fit_after_40.jpg';
 import drakos_feature from '../images/feature_images/drakoskeep.jpg';
 import goodblock_feature from '../images/feature_images/goodblockio.jpg';
+import daclab_feature from '../images/feature_images/daclab.jpg';
 
 //gallery images
 import crown_touch_gallery_one from '../images/gallery_images/crown_touch3.jpg';
@@ -60,7 +61,7 @@ export default function(){
 		{
 			heading: 'Telos Foundation',
 			short_description: 'Website for a blockchain startup.',
-			full_description: 'Telos is a fork of EOS, a cryptocurrency. I build and maintained the website for the Telos Foundation. I also built some Node.js apps that collected data through the website.',
+			full_description: 'Telos is a fork of EOS, a cryptocurrency. I build and maintained the website for the Telos Foundation. I also built some Node.js apps that collected data through the website. I used Redux for localization.',
 			image: telos_feature,
 			tags: ['JavaScript', 'Responsive Design', 'React', 'Redux', 'Node.js'],
 			links: {
@@ -87,7 +88,7 @@ export default function(){
 		{
 			heading: 'GoodBlock',
 			short_description: 'Website for a Telos block producer.',
-			full_description: 'GoodBlock was the team that created Telos. I built and maintained the website with React.',
+			full_description: 'GoodBlock was the team that created Telos. I developed this site with React and Redux.',
 			image: goodblock_feature,
 			tags: ['JavaScript', 'Responsive Design', 'React', 'Redux'],
 			links: {
@@ -101,7 +102,7 @@ export default function(){
 			image: toolkit_feature,
 			tags: ['JavaScript', 'Responsive Design', 'Sass', 'MVC'],
 			links: {
-				site: 'http://office-demo-rsp.azurewebsites.net/'
+				//site: 'http://office-demo-rsp.azurewebsites.net/'
 			},
 			gallery: [toolkit_gallery]
 		},
@@ -164,6 +165,16 @@ export default function(){
 			}
 		},
 		{
+			heading: 'DAClab',
+			short_description: 'Marketing site for email collection. Not totally sure what it\'s for.',
+			full_description: 'Marketing site for email collection. Not totally sure what it\'s for.',
+			image: daclab_feature,
+			tags: ['React', 'Node.js'],
+			links: {
+				site: 'https://daclab.io'
+			}
+		},
+		{
 			heading: 'Welshon\'s Chiropractic',
 			short_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap. Customizer ready and includes some widgets I built.',
 			full_description: 'Custom WordPress theme based on underscores and built with Twitter Bootstrap.  I built the testimonials widget so the site administrator can add detailed testimonials with stars and links without writing any code.',
@@ -185,9 +196,9 @@ export default function(){
 		{
 			heading: 'Fit After 40 Guy',
 			short_description: 'Fitness oriented website. Custom WordPress theme based on underscores and built with Bootstrap.',
-			full_description: 'Fitness oriented website. Custom WordPress theme based on underscores and built with Bootstrap.',
+			full_description: 'Fitness oriented website. Custom WordPress theme based on underscores and built with Bootstrap. I designed it in Sketch.',
 			image: fit_guy_feature,
-			tags: ['WordPress', 'Responsive Design', 'PHP', 'JavaScript', 'jQuery'],
+			tags: ['WordPress', 'Responsive Design', 'PHP', 'JavaScript', 'jQuery', 'Sketch'],
 			links: {
 				site: 'http://fitafter40guy.com'
 			}
@@ -195,11 +206,11 @@ export default function(){
 		{
 			heading: 'Fit Chipotle',
 			short_description: 'Site about the health benefits of a high-burrito diet. Built with Bootstrap.',
-			full_description: 'Site about the health benefits of a high-burrito diet. Built with Bootstrap. Designed icon in Photoshop.  The "burrito" is an AriZona Iced Tea can wrapped in foil.  Honestly, I\'m not sure why I made this site.',
+			full_description: 'Site about the health benefits of a high-burrito diet. Built with Bootstrap. Designed icon in Photoshop.  The "burrito" is an AriZona Iced Tea can wrapped in foil. Honestly, I\'m not sure why I made this site.  The "Chubby Chipotle" campaign seems to have ended so now it makes even less sense.',
 			image: fit_chipotle_feature,
 			tags: ['Responsive Design', 'Bootstrap', 'Photoshop', 'Animate.css', 'WOW.js'],
 			links: {
-				site: 'http://fitchipotle.com'
+				site: 'https://fitchipotle.com'
 			}
 		},
 		{
@@ -239,11 +250,12 @@ export default function(){
 				</ol>
 				I suspected that users didn’t respond to “Glow Rider” as much as other games with similar mechanics in part because those other games had cars and my game had a glowing bike.  I also didn’t think “glow” or “rider” were important search terms.  So, I developed Drive Car with a more realistic setting and several cars to choose from, and gave it the terrible name of “Drive Car”.<br />
 				I have no way of knowing if my theories were correct, but Drive Car consistently rated highly for searches of “drive” and “car” and averaged 2000 new installs per day for over a year.
+				Drive Car is not currently listed in the Play store.
 			`,
 			image: drive_car_feature,
 			tags: ['Unity3D', 'C#', 'Photoshop', 'SketchUp'],
 			links: {
-				site: 'https://play.google.com/store/apps/details?id=com.JustinTechMobile.DriveCar'
+				//site: 'https://play.google.com/store/apps/details?id=com.JustinTechMobile.DriveCar'
 			},
 			gallery: [
 				drive_car_gallery_one,

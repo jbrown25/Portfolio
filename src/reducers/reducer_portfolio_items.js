@@ -166,8 +166,8 @@ export default function(){
 		},
 		{
 			heading: 'DAClab',
-			short_description: 'Marketing site for email collection. Not totally sure what it\'s for.',
-			full_description: 'Marketing site for email collection. Not totally sure what it\'s for.',
+			short_description: 'Marketing site for a blockchain application.',
+			full_description: 'Marketing site for a blockchain application. Built with React, Node.js for email collection.',
 			image: daclab_feature,
 			tags: ['React', 'Node.js'],
 			links: {

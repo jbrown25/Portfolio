@@ -7,6 +7,9 @@ import ContactForm from './contact_form';
 export default class Contact extends Component {
 
 	componentDidMount(){
+		//prevents window getting stuck if the browser navigates away from modal without closing
+		document.body.classList.remove('modal_open');
+		
 		const contact_timeline = anime.timeline();
 		contact_timeline
 		.add({

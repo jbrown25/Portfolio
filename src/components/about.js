@@ -12,8 +12,6 @@ const ABOUT_WORK_QUANT = 3;
 class About extends Component {
 
 	componentDidMount(){
-		//prevents window getting stuck if the browser navigates away from modal without closing
-		document.body.classList.remove('modal_open');
 
 		const about_timeline = anime.timeline();
 		about_timeline

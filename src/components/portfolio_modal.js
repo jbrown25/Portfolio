@@ -20,6 +20,11 @@ export default class PortfolioModal extends Component {
 		if(this.props.item && !this.state.isAnimating) this.animateIn();
 	}
 
+	componentWillUnmount(){
+		//prevents window getting stuck if the browser navigates away from modal without closing
+		document.body.classList.remove('modal_open');
+	}
+
 	animateIn(){
 		const {rect} = this.props;
 		const windowWidth = window.innerWidth,

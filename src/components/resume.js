@@ -54,8 +54,6 @@ const jobsList = [
 export default class Resume extends Component {
 
 	componentDidMount(){
-		//prevents window getting stuck if the browser navigates away from modal without closing
-		document.body.classList.remove('modal_open');
 		
 		const resume_timeline = anime.timeline();
 		resume_timeline

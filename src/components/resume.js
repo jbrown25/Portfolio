@@ -10,6 +10,7 @@ const jobsList = [
 		job_location: 'Issaquah, WA',
 		description_list: [
 			'Developed and maintained websites and Node.js applications',
+			'Translated PSD files into responsive, dynamic UI',
 			'Wrote and deployed AWS Lambda functions'
 		]
 	},
@@ -39,7 +40,7 @@ const jobsList = [
 		organization: 'Waking Girl Web Design',
 		job_title: 'Web Developer',
 		job_date: 'February 2016 - January 2017',
-		job_location: '',
+		job_location: 'Seattle, WA',
 		description_list: [
 			'Built WordPress sites and landing page templates, designed creatives for ad campaigns',
 			'Developed custom jQuery plugins and WordPress widgets for client sites',
@@ -213,6 +214,7 @@ export default class Resume extends Component {
 							<div className='experience_job_description'>
 								<ul>
 									<li>Redesigning and developing WordPress site for the Seattle branch</li>
+									<li>Teaching WordPress administration to other volunteers</li>
 								</ul>
 							</div>
 						</div>

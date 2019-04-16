@@ -5,39 +5,49 @@ import '../styles/navigation.css';
 
 export default class Navigation extends Component {
 
-	constructor(props){
-		super(props);
+	constructor(){
+		super();
 
 		this.state = {
 			navOpen: false,
 			isAnimating: false
 		};
-
-		this.handleClick = this.handleClick.bind(this);
-		this.handleLinkClick = this.handleLinkClick.bind(this);
 	}
 
 	shouldComponentUpdate(nextProps, nextState){
 		return !nextState.isAnimating;
 	}
 
-	handleClick(){
+	handleClick = () => {
+		//do nothing if the nav is animating
 		if(!this.state.isAnimating){
 			this.state.navOpen ? this.animateToggleClose() : this.animateToggleOpen();
 		}
 	}
 
+	//close the nav when a link is clicked
+	handleLinkClick = e => {
+		e.preventDefault();
+		this.animateToggleClose();
+	}
+
+	//opens the menu when you click the burger menu button
 	animateToggleOpen(){
-		document.body.classList.add('nav_open');
+		document.body.classList.add('nav_open'); //prevents body from scrolling while nav open
 		this.setState({
 			isAnimating: true,
 			navOpen: true
 		});
+
+		//isAnimating for next half second
 		setTimeout(() => {
 			this.setState({isAnimating: false});
 		}, 500);
 		
+		//open radial
 		this.animateRadialOpen();
+
+		//anime.js, animate burger menu into "X"
 		const toggle_timeline = anime.timeline();
 		toggle_timeline
 		.add({
@@ -65,17 +75,23 @@ export default class Navigation extends Component {
 		});
 	}
 
+	//closes the menu when you click "X", or click a menu item
 	animateToggleClose(){
 		document.body.classList.remove('nav_open');
 		this.setState({
 			isAnimating: true,
 			navOpen: false
 		});
+		
+		//is animating for the next half second
 		setTimeout(() => {
 			this.setState({isAnimating: false});
 		}, 500);
+
+		//close the radial
 		this.animateRadialClose();
 
+		//anime.js, animate the "X" back into the burger menu
 		const toggle_timeline = anime.timeline();
 		toggle_timeline
 		.add({
@@ -105,19 +121,25 @@ export default class Navigation extends Component {
 		this.setState({navOpen: false});
 	}
 
+	//calculate the size of the radial need to cover the whole screen
+	//figure out the ratio of the cover over the toggle, then animate the scale
+	//fade in the menu items, staggered
 	animateRadialOpen(){
 		const toggleRect = this.toggle.getBoundingClientRect();
 		const windowWidth = window.innerWidth,
 			  windowHeight = window.innerHeight,
 			  maxSide = Math.max(windowWidth, windowHeight);
 
+		//account for the distance between the toggle and the upper right of the screen
 		const cornerSpace = Math.sqrt(Math.pow(windowWidth - toggleRect.left, 2) + Math.pow(toggleRect.bottom, 2));
-
+		//figure out the radius of the "virtual square", with maxSide as length
 		const radius = Math.sqrt(Math.pow(maxSide, 2) * 2) + cornerSpace * 2;
 		const menuScaleRatio = radius / (Math.SQRT2 * 29); // root 2 * toggle width / 2.  Toggle width is 60, for now.
 
+
 		const radial_timeline = anime.timeline();
 
+		//scale the radial, fade the menu items up, staggered
 		radial_timeline
 		.add({
 			targets: this.radial,
@@ -135,9 +157,9 @@ export default class Navigation extends Component {
 			},
 			easing: 'easeOutQuad'
 		});
-
 	}
 
+	//reverse the animateRadialOpen function
 	animateRadialClose(){
 		const toggleRect = this.toggle.getBoundingClientRect();
 		const windowWidth = window.innerWidth,
@@ -169,30 +191,24 @@ export default class Navigation extends Component {
 		});
 	}
 
-	handleLinkClick(e){
-		e.preventDefault();
-		this.animateToggleClose();
-	}
-
-
-
+	//seperate desktop and mobile menus, switch between with media queries
 	render(){
 		const {navOpen} = this.state;
 
 		return (
 			<div className='main_nav_container'>
-				<nav className={`${navOpen ? 'main_nav nav_open' : 'main_nav'}`}>
+				<nav className={`main_nav ${navOpen ? 'nav_open' : ''}`}>
 					<ul className='mobile_menu' ref={el => this.menu_list = el}>
 						<li onClick={this.handleLinkClick}><Link to='/'>About</Link></li>
 						<li onClick={this.handleLinkClick}><Link to='/portfolio'>Portfolio</Link></li>
 						<li onClick={this.handleLinkClick}><Link to='/resume'>Resum&#233;</Link></li>
 						<li onClick={this.handleLinkClick}><Link to='/contact'>Contact</Link></li>
-							<li>
-								<ul className='mobile_social'>
-									<li><a href='https://www.linkedin.com/in/justin-brown-96528982' target='_blank' rel='noopener noreferrer'><i className='fa fa-linkedin'></i></a></li>
-									<li><a href='https://github.com/jbrown25' target='_blank' rel='noopener noreferrer'><i className='fa fa-github'></i></a></li>
-								</ul>
-							</li>
+						<li>
+							<ul className='mobile_social'>
+								<li><a href='https://www.linkedin.com/in/justin-brown-96528982' target='_blank' rel='noopener noreferrer'><i className='fa fa-linkedin'></i></a></li>
+								<li><a href='https://github.com/jbrown25' target='_blank' rel='noopener noreferrer'><i className='fa fa-github'></i></a></li>
+							</ul>
+						</li>
 					</ul>
 					<ul className='desktop_menu'>
 						<li><Link to='/portfolio'>Portfolio</Link></li>
